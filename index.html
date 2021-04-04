@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">FreeCodeCamp Form</h1>
+        <p id="description">
+            Formulir survei untuk pengguna baru
+        </p>
+        <form id="survey-form">
+            <div class="fullName row">
+                <label for="name" id="name-label">
+                    Full Name
+                </label>
+                <input type="text" id="name" placeholder="Masukan Nama Anda" required>
+            </div>
+            <div class="email row">
+                <label for="email" id="email-label">
+                    Surel
+                </label>
+                <input type="email" id="email" placeholder="Masukan Email Anda" required>
+            </div>
+            <div class="number row">
+                <label for="number" id="number-label">
+                    Usia
+                </label>
+                <input type="number" id="number" placeholder="Usia" max="99" min="6" required>
+            </div>
+            <div class="option row">
+                <label for="select">Profesi</label>
+                <select value="" id="dropdown" required>
+                    <option value="" disabled selected>Pilih Salah Satu</option>
+                    <option value="">Dokter</option>
+                    <option value="">Polisi/TNI</option>
+                    <option value="">PNS</option>
+                    <option value="">Wirausaha</option>
+                    <option value="">Wiraswasta</option>
+                </select>
+            </div>
+            <div class="rating row">
+                <p>Pendapat Anda Tentang Kami</p>
+                <label>
+                    <input name="user-rating" type="radio" value="Luar Biasa" checked>
+                    Luar biasa
+                </label>
+                <label>
+                    <input name="user-rating" type="radio" value="Biasa Saja">
+                    Biasa Saja
+                </label>
+                <label><input name="user-rating" type="radio" value="buruk">
+                    Buruk
+                </label>
+            </div>
+            <div class="skill row">
+                <p>Skill Coding</p>
+                <label>
+                    <input type="checkbox" value="cpp">
+                    C++
+                </label>
+                <label>
+                    <input type="checkbox" value="c">
+                    C
+                </label>
+                <label>
+                    <input type="checkbox" value="python">
+                    Python
+                </label>
+                <label>
+                    <input type="checkbox" value="java">
+                    Java
+                </label>
+                <label>
+                    <input type="checkbox" value="ruby">
+                    Ruby
+                </label>
+                <label>
+                    <input type="checkbox" value="Golang">
+                    Golang
+                </label>
+                <label>
+                    <input type="checkbox" value="Ruby">
+                    Ruby
+                </label>
+            </div>
+            <div class="advice row">
+                <label>Kritik & Saran</label>
+                <textarea id="comments" name="comment" placeholder="Masukan disini!" rows="5"></textarea>
+            </div>
+            <button type="submit" id="submit">Kirim Sekarang</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

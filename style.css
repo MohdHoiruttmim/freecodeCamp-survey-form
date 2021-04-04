@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #dfe6e9;
+    --black: #2d3436;
+    --grey: #b2bec3;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1, p{
+    font-family: 'Poppins', sans-serif;
+}
+
+#title{
+    line-height: 30px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px 50px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    margin: 50px 0;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea,
+input{
+    border-radius: 5px;
+    border: .5px solid #636e72;
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+}
+
+select{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+textarea:focus,
+input:focus{
+    border: .5px solid rgb(9 132 227 / 50%);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgb(9 132 227 / 25%);
+}
+
+.rating input:focus{
+    border: none;
+    box-shadow: none;
+}
+
+select{
+    border-radius: 5px;
+    padding: 3px 10px;
+    border: .5px solid #636e72;
+}
+
+select:focus{
+    border: .5px solid rgb(9 132 227 / 50%);
+    box-shadow: 0 0 0 0.2rem rgb(9 132 227 / 25%);
+    outline: none;
+    border-radius: 5px;
+}
+
+.row{
+    margin-bottom: 10px;
+}
+
+#name,
+#email,
+#number{
+    width: 400px;
+}
+
+button{
+    background: #2ecc71;
+    border: none;
+    padding: 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+button:focus{
+    outline:none;
+}
+button:hover{
+    background: #27ae60;
+}
+
+@media (max-width: 480px){
+    .container{
+        margin: 50px 0;
+        padding: 40px 20px;
+    }
+
+    #name,
+    #email,
+    #number{
+        width: 250px;
+    }
+}
